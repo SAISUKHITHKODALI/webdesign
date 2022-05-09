@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    color: #333;
+    line-height: 1.5;
+    background: rgb(212, 183, 183);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    max-width: 950px;
+    background: rgb(148, 197, 236);
+    margin: 100px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 20% 40% 50%;  
+    /*row-gap: 10px;
+    column-gap: 10px;*/
+    align-items: start;
+    justify-content: center;
+}
+
+.element{
+    /*max-width: 200px;*/
+    background: rgb(122, 235, 229);
+    padding: 10px;
+    border: rgb(21, 20, 119);
+}
+
+.element:nth-of-type(4){
+    align-self: end;
+    justify-self: end;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT-1</title>
+    <link rel="stylesheet" href="assignment_one.css">
+    <h1 class="header">WEB DESIGN ASSIGNMENT 1</h1>
+    
+</head>
+<body>
+    <!--forms section-->
+    <div class="container1">
+        <form onsubmit = "yourJSfunction();" autocomplete = "off"> 
+                <label>FIRST NAME:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="firstname" id="firstname" placeholder="FIRST NAME"/>
+            <br>
+                <label>LAST NAME:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="lastname" id="lastname" placeholder="LAST NAME"/>
+            <br>
+                <label>DATE OF BIRTH:</label>&nbsp;
+                <input type="date" name="dateofirth" id="dateofbirth"/>
+            <br>
+                <label>MOBILE NUMBER:</label>&nbsp;&nbsp;&nbsp;
+                <input type="text" name="mobilenumber" id="mobilenumber" placeholder="MOBILE NUMBER"/>
+            <br>
+                <label>E MAIL ID:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" name="emailid" id="emailid" placeholder="E MAIL ID"/>
+            <br>
+                <label>ADDRESS:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="address" id="address" placeholder="ADDRESS"/>
+            <br><br>
+            <button type="button" onclick="submit()">SUBMIT</button>
+            
+        </form>
+    </div>
+    <!--tables section-->
+    <div class="container2">
+        <table id="myTable">
+          
+            <tr>
+                <th>FIRST NAME</th>
+                <th>LAST NAME</th>
+                <th>DATE OF BIRTH</th>
+                <th>MOBILE NUMBER</th>
+                <th class="item5">E MAIL ID</th>
+                <th class="item6">ADDRESS</th>
+            </tr>
+        
+        </table>
+
+    </div>
+    <script>
+        function submit() {
+            var fname = document.getElementById('firstname').value;
+            var lname = document.getElementById('lastname').value;
+            var dateofbirth = document.getElementById('dateofbirth').value;
+            var mobilenumber = document.getElementById('mobilenumber').value;
+            var emailid = document.getElementById('emailid').value;
+            var address = document.getElementById('address').value;
+
+            var table = document.getElementById("myTable");
+            var row = table.insertRow(1);
+            var cell_1 = row.insertCell(0);
+            var cell_2 = row.insertCell(1);
+            var cell_3 = row.insertCell(2);
+            var cell_4 = row.insertCell(3);
+            var cell_5 = row.insertCell(4);
+            var cell_6 = row.insertCell(5);
+           
+  
+
+            cell_1.innerText = fname;
+            cell_2.innerText = lname;
+            cell_3.innerText = dateofbirth;
+            cell_4.innerText = mobilenumber;
+            cell_5.innerText = emailid;
+            cell_6.innerText = address;
+        }
+    </script>
+    
+</body>
+</html>

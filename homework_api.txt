@@ -1,0 +1,12 @@
+name
+population
+area
+capital
+currency
+flag
+
+
+
+
+
+mdn

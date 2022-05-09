@@ -1,0 +1,53 @@
+.body{
+    max-width: 1000px;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+
+.header{
+   font-size: 25px;
+   background-color: rgb(124, 124, 145);
+   font-display: white;
+   text-align:center;
+}
+
+
+.heading1{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.heading2{
+  font-size: 50px;
+}
+.para1{
+  font-family: 'Abel', sans-serif;
+}
+
+.heading4{
+  font-family: "League Gothic";
+  font-size: 20px;
+}
+
+.heading5{
+font-family: "League Gothic";
+font-size: 20px;
+}
+
+.heading6{
+font-family: "League Gothic";
+font-size: 20px;
+}
+
+.image1{
+  margin: auto;
+}
+
+.footer{
+margin-top: 35px;
+  background-color: rgb(202, 206, 206);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border: 3px;
+  text-transform: uppercase;
+}
